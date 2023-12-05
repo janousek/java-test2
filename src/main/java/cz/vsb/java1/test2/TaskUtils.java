@@ -19,5 +19,18 @@ public class TaskUtils {
         }
         return result;
     }
+
+
+    public static List<Person> generateListOfPersons() {
+        return generateListOfPersons(10 + RandomGenarator.random.nextInt(10));
+    }
+
+    public static List<Person> generateListOfPersons(int length) {
+        List<Person> result = new ArrayList<>();
+        for (int i = 0; i < length; i++) {
+            result.add(Person.generate());
+        }
+        return result;
+    }
 }
 

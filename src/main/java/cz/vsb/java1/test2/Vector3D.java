@@ -58,7 +58,7 @@ public class Vector3D {
 		this.z = z;
 	}
 
-	public double getLlength() {
+	public double getLength() {
 		return Math.sqrt(x * x + y * y + z * z);
 	}
 

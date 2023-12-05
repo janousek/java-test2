@@ -52,6 +52,11 @@ public class Person {
     }
 
 
+
+    public String nicerText() {
+        return String.format("%s %s (%3d)", firstName, lastName, age);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
